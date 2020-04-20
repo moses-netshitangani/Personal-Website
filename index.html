@@ -1,216 +1,154 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<head>
-  <title>Home</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Moses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <nav>
-      <a href="#hm">Home</a>
-      <a href="#abt">About</a>
-      <a href="#rsm">Resume</a>
-      <a href="#projects">Projects</a>
-      <a href="#cnt">Contact</a>
-    </nav>
-  </header>
+    <div class="home-bg">
+      <div class="nav">
+          <a href="#home" id="homeNav" onclick="goHome()">Home</a>
+          <a href="#resume" id="resumeNav" onclick="goResume()">Resume</a>
+          <a href="#projects" id="projectsNav" onclick="goProjects()">Projects</a>
+          <a href="#contact" id="contactNav" onclick="goContact()">Contact</a>
+      </div>
 
-  <div class="container" id="hm">
-    <div class="home">
-      <div class="home-img">
-        <div class="img-border">
-          <div class="img">
+      <!-- Beginning of the Home page -->
+      <div class="home-about">
+        <div class="home-avatar">
+          <div class="avatar-border">
           </div>
+        </div>
+        <div class="home-headings">
+          <h1>Hello, I am <span>Moses</span></h1>
+          <h1>Software and Web Developer</h1>
+        </div>
+        <div id="home" class="home-info">
+          <p>I am a motivated software and web developer, in my final year
+             of study at the University of Cape Town. Solving real-world
+             problems using my knowledge and skills in computer sciences is
+             one of the things I enjoy the most. I am familiar with Java,
+             Python, Javascript, basic front-end web development
+             languages and Database design and manipulation using MySQL.
+          </p>
         </div>
       </div>
-      <div class="home-text">
-        <h1>Hello, I'm <span>Moses</span></h1>
-        <h2>Software and Web developer</h2>
-      </div>
-    </div>
+      <!-- End of the Home page -->
 
-    <div class="about" id="abt">
-      <h1>So, a little about <span>myself...</span></h1>
-      <div class="about-container">
-        <div class="about-text">
-          <p>I am a dedicated and learning young person, whose prowess, among
-            others, lies in programming. Currently I am a third year student at
-            the Univeristy of Cape Town, majoring in Computer Sciences and
-            Applied Statistics. I am
-            familiar with Java, Python, basic front-end web development languages
-            (HTML, CSS3 & Javascript) and Database design and manipulation using
-            MySql. I possess data analysis skills and information systems
-            knowledge. Additionally to
-            being a student, I also tutored (part time) first year Computer
-            Sciences at UCT. I formed part of the O-Week sub-committee leaders at
-            Smuts Hall (a res at UCT) in 2019. Above all, I am a social person,
-            who posesses leadership skills and enjoys working with people.
-            I am always looking for and open to opportunities that will expand my
-            knowledge and force me to move out of my comfort zone.</p>
-        </div>
-        <div class="about-img-border">
-          <div class="about-img">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="resume" id="rsm">
-      <h1>Resume</h1>
-      <a href="./files/CV.pdf" download>
-        <img src="./icons/download.png" alt="">
-        Download Resume
-      </a>
-      <div class="resume-container">
-        <div class="education">
-          <div class="school">
-            <h1>Education</h1>
-            <div class="school-info">
-              <div class="college">
-                <h2>University of Cape Town (UCT)</h2>
-                <h3>2018-2020: BSc Computer Sciences & Applied Statistics</h3>
-                <p>2020: UCT-assigned Computer Sciences mentor.</p>
-                <p>2019-Current: Member of the Golden Key International Honour
-                Society, UCT: membership restricted to top 15% students in
-                their courses, connects high-achieving students on a global
-                scale.
-                </p>
-                <p>2019: Orientation-Week sub-committee leader, Smuts Hall res,
-                  UCT.
-                </p>
-                <p>2019: Warden’s Award for ‘A First’, Smuts Hall, UCT: awarded
-                  to 2 <sup>nd</sup> year students who obtained a GPA above 75.
-                </p>
-                <p>2018 & 2019: Dean's Merit List.</p>
-              </div>
-              <div class="secondary">
-                <h2>Progress Comprehensive High School</h2>
-                <h3>(2013-2017)</h3>
-                <p>2018: Provincial award for top 5 student in Gauteng SSIP
-                  schools.
-                </p>
-                <p>2017: Matriculated with 7 A's, top student in school.</p>
-                <p>2017: Best learner in Sciences stream.</p>
-              </div>
-            </div>
-          </div>
-          <div class="other">
-            <h1>Work Experience</h1>
-            <div class="work">
-              <p>2020: Applied Statistics (STA2020F) tutor for 2<sup>nd</sup>
-                years', UCT. Work also included conducting lab sessions and assisting
-                students with R-Studio.
-              </p>
-              <p>2019: Computer Science (CSC1015F & CSC1016S) tutor for first
-                years’, UCT. Work also included grading of tests, assignments and
-                invigilating tests.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="skills">
-          <h1>Skills</h1>
-          <h2>Software Dev & OS</h2>
-          <div class="software-dev">
-            <div class="bar">
-              <div class="java">
-                Java
-              </div>
-            </div>
-            <div class="bar">
-              <div class="python">
-                Python
-              </div>
-            </div>
-            <div class="bar">
-              <div class="android-studio">
-                Android-Studio
-              </div>
-            </div>
-            <div class="bar">
-              <div class="sql">
-                MySQL
-              </div>
-            </div>
-            <div class="bar">
-              <div class="bash-shell">
-                Unix Bash shell
-              </div>
-            </div>
-            <div class="bar">
-              <div class="r">
-                R
-              </div>
-            </div>
-          </div>
-
-          <h2>Web Dev</h2>
-          <div class="web-dev">
-            <div class="bar">
-              <div class="html">
-                HTML
-              </div>
-            </div>
-            <div class="bar">
-              <div class="css">
-                CSS
-              </div>
-            </div>
-            <div class="bar">
-              <div class="javascript">
-                Javascript
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bottom">
-      <div class="projects" id="projects" >
-        <h1>Projects</h1>
-        <h2>Some of the work I have done in the past</h2>
-        <div class="projects-container">
-          <div class="proj1">
-            <h1><a href="https://github.com/moses-netshitangani/Basic-Online-Calculator">Online Calculator</a></h1>
-            <div class="calc">
-              <h2>This is a basic web Calculator developed using HTML, CSS &
-                Javascript.
-              </h2>
-            </div>
-          </div>
-          <div class="proj2">
-            <h1><a href="#">Online Digital Clock App</a></h1>
-            <div class="clock">
-              <h2>This is a simple web app that tells the time and also has the
-                option to use a stopwatch. Developed using HTML, CSS &
-                Javascript.
-              </h2>
-            </div>
-          </div>
-          <div class="proj3">
-            <h1><a href="https://github.com/moses-netshitangani/Personal-Website">
-              Personal Website
+      <!-- Beginning of the Resume section -->
+      <div id="resume" class="Resume">
+        <div class="college">
+          <h2>University of Cape Town (UCT)</h2>
+          <h3>BSc in Computer Sciences & Applied Statistics (2018-2020)</h2>
+          <div class="years">
+            <h3>2020:</h3>
+            <p>UCT-assigned mentor for first year computer science students.</p>
+            <h3>2019:</h3>
+            <p>Member of the Golden Key International Honour Society, UCT:
+              membership restricted to top 15% students in their courses,
+              connects high-achieving students on a global scale.
+            </p>
+            <p>
+              Warden’s Award for ‘A First’, Smuts Hall, UCT: awarded to
+              2<sup>nd</sup> year students who obtained a GPA above 75.
+            </p>
+            <p>
+              Dean's Merit List (2019)
+            </p>
+            <p>
+              Orientation-Week sub-committee leader, Smuts Hall res, UCT.
+            </p>
+            <h3>2018:</h3>
+            <p>
+              Dean's Merit List (2018)
+            </p>
+            <p>
+              Smuts Hall soccer team-member
+            </p>
+            <div class="button">
+              <a href="documents/CV.pdf">
+                <img src="icons/download.png" alt="download icon"> Resume
               </a>
-            </h1>
-            <h2>Well I had to put this in here because it is one of the projects
-              I've had the most fun in developing. This is my first Website.
-            </h2>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="high-school">
+            <h2>Progress High School (2013-2017)</h2>
+            <h3>2018:</h3>
+            <p>
+              Provincial award for top 5 student in Gauteng SSIP schools.
+            </p>
+            <h3>2017:</h3>
+            <p>
+              Matriculated with all A's, top student in school.
+            </p>
+            <h3>2016:</h3>
+            <p>
+              Best student in the Sciences stream.
+            </p>
+          </div>
+          <div class="work-experience">
+            <h2>Work Experience</h2>
+            <h3>2020:</h3>
+            <p>
+              Computer Sciences (CSC2001F) and Statistics (STA2020F) tutor for
+              2nd years', UCT. Work also included conducting lab sessions,
+              assisting students with R-Studio, and providing consultation.
+            </p>
+            <h3>2019:</h3>
+            <p>
+              Computer Sciences (CSC1015F & CSC1016S) tutor for first years’,
+              UCT.
+            </p>
           </div>
         </div>
       </div>
+      <!-- End of the Resume section -->
 
-      <div class="contact" id="cnt">
-        <h1>Contact</h1>
-        <h2>You can get in touch with me via the following platforms</h2>
+      <!-- Beginning of the Projects section -->
+      <div id="projects" class="Projects">
+        <a href="#">
+          <div class="proj1">
+            <h2>To-do (Reminder) web app</h2>
+            <div class="app-pic to-do">
+            </div>
+          </div>
+        </a>
+
+        <div class="mini">
+          <a href="#">
+            <div class="proj2">
+              <h2>Digital clock & Stopwatch</h2>
+              <div class="app-pic watch1">
+              </div>
+              <div class="app-pic watch2">
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="proj3">
+              <h2>Basic Calculator</h2>
+              <div class="app-pic calculator">
+
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
+      <!-- End of the Projects section -->
+
+      <!-- Beginning of  Contact section-->
+      <!-- End of the Contact section -->
     </div>
 
-  </div>
+    <script src="scripts/script.js"></script>
 
-</body>
-
+  </body>
 </html>

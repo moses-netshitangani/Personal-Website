@@ -2,357 +2,321 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  scroll-behavior: smooth;
-  color: white;
-  text-align: center;
-  height: auto;
-}
-
-body {
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imgs/cpt.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* Nav section */
-nav {
-  background-color: #011824d9;
-  width: 100%;
-  position: fixed;
-  height: 30px;
-  text-align: right;
-  z-index: 1;
-}
-
-header nav a {
-  text-decoration: none;
-  margin: 20px;
-  padding: 10px;
-  font-size: 24px;
-  font-weight: 600;
 }
 
 /* Home section */
-.home {
+
+.home-bg {
   height: 100vh;
-  display: grid;
-  grid-template-rows: 2fr 1.5fr;
+  background-image: url("../imgs/1.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.nav {
+  text-align: right;
+  padding: 1%;
   font-size: 28px;
 }
 
-.img-border {
-  background: linear-gradient(white, #009688, #03A9F4);
-  height: 300px;
-  width: 300px;
-  border-radius: 40%;
-  margin: 0 auto;
-  margin-top: 80px;
-  animation: slide-img;
-  animation-duration: 2.5s;
+.nav a {
+  text-decoration: none;
+  color: #434141;
+  margin: 1%;
 }
 
-.img {
+@keyframes nav-hover {
+  0%{
+    color: white;
+  }
+
+  100%{
+    color: #094553;
+  }
+}
+
+@keyframes slide-avatar {
+  0%{
+    right: 0%;
+  }
+  100%{
+    right: 6.5%;
+  }
+}
+
+.nav a:hover{
+  animation: nav-hover;
+  animation-duration: 3s;
+}
+
+.home-about {
+  background-color: #171e1e61;
+  width: 70%;
+  height: 75%;
+  margin: 0 auto;
+  margin-top: 4%;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 0 40px 0 40px;
+}
+
+.home-avatar {
   background-image: url("../imgs/cap-shwr.jpg");
   background-position: center;
   background-size: cover;
-  height: 295px;
-  width: 295px;
-  position: relative;
-  top: 2.5px;
-  left: 2.5px;
-  border-radius: 40%;
+  animation: slide-avatar;
+  animation-duration: 1s;
+  width: 17.5%;
+  height: 32.5%;
+  float: right;
+  position: absolute;
+  top: 35%;
+  right: 6.5%;
+  border-radius: 40px;
 }
 
+.avatar-border{
+  border: 1.5px solid #2196F3;
+  width: 99%;
+  height: 99%;
+  border-radius: 40px;
+  background-color: transparent;
+}
 
-.home-text {
+.home-headings {
+  color: white;
+  margin: 12.5% 0 0 12.5%;
+  display: inline-block;
+  font-size: 170%;
+  border-bottom: 5px solid #f8ad5e;
+}
+.home-headings h1{
   text-align: center;
-}
-
-span {
-  color: #29b6f6;
-}
-
- .home h1 {
-  width: 500px;
-  display: inline-block;
-  padding-top: 30px;
-  border-bottom: 3px solid #29b6f6;
-  animation: slide;
-  animation-duration: 2.5s;
-}
-
-.home h2 {
-  padding-top: 10px;
-}
-
-@keyframes slidez {
-  0% {
-    position: relative;
-    left: -70%;
-  }
-  100% {
-    position: relative;
-    left: 0%;
-  }
-}
-
-@keyframes slide-imgz {
-  0% {
-    position: relative;
-    right: -70%;
-  }
-  100% {
-    position: relative;
-    right: 0%;
-  }
-}
-
-/* About section */
-.about {
-  height: 100vh;
-  font-size: 18px;
-  padding: 10px;
-  background-color: #002232b0;
-}
-
-.about-container {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  grid-gap: 1em;
-  border: 3px solid;
-  border-radius: 15px;
-  border-color: transparent transparent #29b6f6 #29b6f6;
-  height: auto;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.about h1 {
-  display: inline-block;
-  border-bottom: 3px solid #29b6f6;
-  font-size: 50px;
-  margin: 60px 0 20px 40px;
-}
-
-.about-text {
-  max-height: 600px;
-  border-right: 3px solid;
-  border-image: linear-gradient(to bottom,#29b6f6,rgba(0, 0, 0, 0)) 1 100%;
-  overflow-y: auto;
-}
-
-.about-text p {
-  text-align: justify;
-  padding: 40px;
-  line-height: 40px;
-}
-
-.about-img-border {
-  max-height: 470px;
-  padding-top: 20px;
-}
-
-.about-img {
-  height: 400px;
-  width: 350px;
-  border-radius: 40%;
-  border-color: black;
-  background-image: url("../imgs/gk.jpg");
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-}
-
-/* Resume section */
-.resume {
-  height: auto;
-  text-align: center;
-  padding: 1em;
-}
-
-.resume h1 {
-  display: inline-block;
-  margin: 20px 0 20px 0;
-
-}
-.resume a {
   display: block;
-  width: 200px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 18px;
-  text-decoration: none;
 }
 
-.resume-container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 1em;
-  grid-auto-rows: minmax(auto,850px);
-  /* height: 800px; */
-  height: auto;
- }
-
-.education {
-  background-color: #002232b0;
-  border-radius: 20px;
-  display: grid;
-  grid-template-rows: 2.5fr 1.5fr;
-  grid-gap: 1em;
-  font-size: 18px;
-  padding-bottom: 20px;
-  height: auto;
+.home-headings span {
+  color: #f8ad5e;
 }
 
-.education p {
-  line-height: 30px;
-  overflow: auto;
-}
-
-
-.school-info {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-  grid-gap: 1em;
-  height: auto;
-}
-
-.school-info div, .work {
-  width: 95%;
-  border-left: 3px solid #29b6f6;
-  border-bottom: 3px solid #29b6f6;
-  border-radius: 10px;
-  margin: 0 auto;
-
-}
-
-.skills {
-  background-color: #002232b0;
-  border-radius: 20px;
-
-}
-
-.bar {
-  width: 90%;
-  height: 20px;
-  border: 2px solid #29b6f6;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-
-.java {
-  width: 90%;
-  height: inherit;
-  background-color: black;
-}
-
-.python {
-  width: 75%;
-  height: inherit;
-  background-color: black;
-}
-
-.bash-shell {
-  width: 45%;
-  height: inherit;
-  background-color: black;
-}
-
-.android-studio {
-  width: 50%;
-  height: inherit;
-  background-color: black;
-}
-
-.sql {
-  width: 60%;
-  height: inherit;
-  background-color: black;
-}
-
-.r {
-  width: 50%;
-  height: inherit;
-  background-color: black;
-}
-
-.html {
-  width: 85%;
-  height: inherit;
-  background-color: black;
-}
-
-.css {
+.home-info {
   width: 70%;
-  height: inherit;
-  background-color: black;
+  max-height: 80%;
+  overflow: hidden;
+  margin: 3.5% 0 0 12.5%;
+  display: inline-block;
 }
 
-.javascript {
-  width: 75%;
-  height: inherit;
-  background-color: black;
-}
-
-.software-dev div, .web-dev div:nth-child(odd){
-  border-radius: 10px;
-  text-align: left;
-  font-size: 18px;
+.home-info p {
+  text-align: justify;
   color: white;
 }
 
-/* Bottom section */
-.bottom {
-  height: 100vh;
-  display: grid;
+#homeNav {
+  font-weight: 600;
+  color: #094553;
+}
+/* End of the Home section */
+
+/* Beginning of the Resume section */
+.Resume{
+  width: 70%;
+  height: 75%;
+  background-color: transparent;
+  color: white;
+  margin: 0 auto;
+  margin-top: 3%;
+  display: none;
+  display: none;
   grid-template-columns: 1fr 1fr;
-  margin: 50px 10px 0px 10px;
-  border: 3px solid transparent;
-  border-radius: 20px;
-  background-color: #06141ac7;
+  grid-gap: 1em;
 }
-
-/* Projects section */
-.projects {
-  background-color: #06141a1f;
+.Resume h2{
+  display: inline-block;
+  border-bottom: 2px solid #f8ad5e;
+}
+.Resume h3{
+  margin: 3% 0 0 0;
+}
+.Resume p{
+  margin: 1% 0 2% 2%;
+  text-align: justify;
+}
+.button{
   text-align: center;
-  margin: 5px 0 5px 5px;
-  /* border-radius: 20px; */
+  margin-top: 5%;
 }
-
-.projects-container {
+.Resume a{
+  border: 2px solid #171e1e61;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.75%;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.college, .high-school, .work-experience{
+  background-color: #171e1e61;
+  padding: 5%;
+  border-radius: 0 40px 0 40px;
+}
+.college{
+  animation: slide-big;
+  animation-duration: 3s;
+}
+.high-school{
+  animation: slide-top;
+  animation-duration: 3s;
+}
+.right{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
 }
 
-.proj1, .proj2, .proj3 {
-  border: 3px solid transparent;
-  border-radius: 20px;
-  background-color: #50616d2e;
-  width: 95%;
+/* End of the Resume section */
+
+/* Beginning of the Projects section */
+.Projects {
+  width: 70%;
+  height: 75%;
+  background-color: transparent;
   margin: 0 auto;
+  margin-top: 1%;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  border-radius: 40px 40px 40px 40px;
 }
 
-.proj1 a, .proj2 a, .proj3 a {
-  color: #29b6f6;
-  text-decoration: none;
+.Projects h2{
+  font-size: 24px;
+  display: inline-block;
+  margin: 5% 0 2.5% 0;
+  color: white;
+  border-bottom: 3px solid #f8ad5e;
 }
 
-
-.projects h1, .contact h1 {
-  margin: 50px 0 20px 0;
+.proj1{
+  background-color: #171e1e61;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 40px 0 40px;
+  text-align: center;
+  animation: slide-big;
+  animation-duration: 3s;
 }
 
-/* Contact session */
-.contact {
-  background-color: #040c0fd2;
-  margin: 5px 5px 5px 0;
-  /* border-radius: 20px; */
+.app-pic{
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.to-do{
+    background-image:url("../imgs/Reminder.png");
+    width: 90%;
+    height: 50%;
+}
+
+.watch1{
+    background-image:url("../imgs/Stopwatch1.png");
+    width: 45%;
+    height: 40%;
+    display: inline-flex;
+}
+.watch2{
+    background-image:url("../imgs/Stopwatch2.png");
+    width: 45%;
+    height: 40%;
+    display: inline-flex;
+}
+
+.calculator{
+  background-image:url("../imgs/Calculator.png");
+  width: 35%;
+  height: 80%;
+  float: left;
+  margin: 5%;
+}
+
+.mini{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.proj2{
+  background-color: #171e1e61;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 40px 0 40px;
+  text-align: center;
+  animation: slide-top;
+  animation-duration: 3s;
+}
+
+.proj3{
+  background-color: #171e1e61;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 40px 0 40px;
+  text-align: center;
+}
+
+@keyframes slide-big{
+  0%{
+    position: relative;
+    left: -50%;
+  }
+  100%{
+    left: 50%;
+  }
+}
+@keyframes slide-top{
+  0%{
+    position: relative;
+    top: -50%;
+  }
+  100%{
+    top: 55%;
+  }
+}
+
+/* End of the Projects section */
+
+/* Mobile friendly */
+@media screen and (max-width: 1420px){
+    .nav {
+      font-size: 16px;
+    }
+    .home-about{
+      max-height: 65%;
+      width: 75%;
+      margin-top: 7.5%;
+    }
+    .home-avatar{
+      width: 20%;
+      height: 20%;
+      border-radius: 40px;
+      top: 65%;
+      right: 2.5%
+    }
+    .home-headings{
+      width: 100%;
+      font-size: 18px;
+      width: 65%;
+      margin: 5% 0 0 20%;
+    }
+    .home-info{
+      margin: 10% 2% 0 5.5%;
+      /* font-size: 18px; */
+      width: 90%;
+      max-height: 47.5%;
+    }
+    .home-info p{
+      max-height: inherit;
+    }
 }
