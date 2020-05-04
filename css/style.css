@@ -240,6 +240,16 @@ body{
   animation: slide-big;
   animation-duration: 2s;
 }
+
+.proj4{
+  background-color: #171e1e61;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  animation: slide-big;
+  animation-duration: 1.5s;
+}
 /* End of the Projects section */
 
 
@@ -511,13 +521,14 @@ body{
   /* Projects section */
   .Projects{
     margin-top: 2.5%;
+    height: 100%;
   }
   .Projects h2{
     font-size: 1.5em;
     margin: 2.5% 0 2.5% 0;
     border-bottom: 4px solid #f8ad5e;
   }
-  .proj1, .proj2, .proj3{
+  .proj1, .proj2, .proj3, .proj4{
     width: 80%;
     margin: 0 auto;
   }
