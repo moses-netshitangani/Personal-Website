@@ -57,7 +57,7 @@ body{
   background-image: url("../imgs/cap-shwr.jpg");
   background-position: center;
   background-size: cover;
-  animation: slide-avatar;
+  -webkit-animation: slide-avatar;
   animation-duration: 1s;
   width: 30%;
   height: 25.5%;
@@ -161,15 +161,15 @@ body{
   margin-bottom: 2.5%;
 }
 .college{
-  animation: slide-side-r;
+  -webkit-animation: slide-side-r;
   animation-duration: 3s;
 }
 .high-school{
-  animation: slide-side-l;
+  -webkit-animation: slide-side-l;
   animation-duration: 2.5s;
 }
 .work-experience{
-  animation: slide-side-r;
+  -webkit-animation: slide-side-r;
   animation-duration: 2s;
 }
 /* End of the Resume section */
@@ -217,7 +217,7 @@ body{
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  animation: slide-big;
+  -webkit-animation: slide-big;
   animation-duration: 3s;
 }
 
@@ -227,7 +227,7 @@ body{
   width: 100%;
   border-radius: 10px;
   text-align: center;
-  animation: slide-big;
+  -webkit-animation: slide-big;
   animation-duration: 2.5s;
 }
 
@@ -237,7 +237,7 @@ body{
   width: 100%;
   border-radius: 10px;
   text-align: center;
-  animation: slide-big;
+  -webkit-animation: slide-big;
   animation-duration: 2s;
 }
 
@@ -247,7 +247,7 @@ body{
   width: 100%;
   border-radius: 10px;
   text-align: center;
-  animation: slide-big;
+  -webkit-animation: slide-big;
   animation-duration: 1.5s;
 }
 /* End of the Projects section */
@@ -286,17 +286,17 @@ body{
 }
 
 .Mail{
-  animation: slide-side-r;
+  -webkit-animation: slide-side-r;
   animation-duration: 2s;
 }
 
 .LinkedIn{
-  animation: slide-side-l;
+  -webkit-animation: slide-side-l;
   animation-duration: 2s;
 }
 
 .GitHub{
-  animation: slide-side-r;
+  -webkit-animation: slide-side-r;
   animation-duration: 1.5s;
 }
 /* End of Contact section */
@@ -407,7 +407,7 @@ body{
   .college{
     width: 43%;
     height: 100%;
-    animation: slide-side-l;
+    -webkit-animation: slide-side-l;
     animation-duration: 3s;
   }
   .high-school{
@@ -416,7 +416,7 @@ body{
     right: 0%;
     width: 43%;
     height: 42.5%;
-    animation: none;
+    -webkit-animation: none;
   }
   .work-experience{
     position: absolute;
@@ -424,7 +424,7 @@ body{
     right: 0%;
     width: 43%;
     height: 42.5%;
-    animation: none;
+    -webkit-animation: none;
   }
   /* End of Resume section */
 
